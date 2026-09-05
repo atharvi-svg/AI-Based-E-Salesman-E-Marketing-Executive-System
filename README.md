@@ -70,14 +70,6 @@ python app.py
 ```
 Then open `http://localhost:5000` in your browser.
 
-## Team & Roles
-
-| Name | Role | GitHub |
-|---|---|---|
-| <name> | Team Lead / Repo Admin | @<username> |
-| <name> | Requirements Analyst | @<username> |
-| <name> | Documentation Lead | @<username> |
-| <name> | Reviewer / QA | @<username> |
 
 ## Documentation
 Full requirements, scope, and system design rationale are in
