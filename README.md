@@ -49,27 +49,6 @@ and why.
 ├── README.md
 └── .gitignore
 
-## Getting Started
-
-### Prerequisites
-- <e.g., Python 3.10+ / Node.js 18+>
-- <e.g., pip / npm>
-
-### Installation
-```bash
-git clone https://github.com/<org-name>/<repo-name>.git
-cd <repo-name>
-# install dependencies, e.g.:
-pip install -r requirements.txt
-```
-
-### Running the App
-```bash
-# e.g.
-python app.py
-```
-Then open `http://localhost:5000` in your browser.
-
 
 ## Documentation
 Full requirements, scope, and system design rationale are in
