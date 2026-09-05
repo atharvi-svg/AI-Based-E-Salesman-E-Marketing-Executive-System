@@ -34,3 +34,47 @@ and why.
 | Optional NLP | <e.g., hosted LLM API for free-text fallback> |
 
 ## Project Structure
+├── docs/
+│ ├── SRS.md # Software Requirements Specification
+│ └── diagrams/ # Use case & data flow diagrams
+├── src/ # Application source code
+├── data/ # Seed product data (CSV/JSON)
+├── README.md
+└── .gitignore
+
+## Getting Started
+
+### Prerequisites
+- <e.g., Python 3.10+ / Node.js 18+>
+- <e.g., pip / npm>
+
+### Installation
+```bash
+git clone https://github.com/<org-name>/<repo-name>.git
+cd <repo-name>
+# install dependencies, e.g.:
+pip install -r requirements.txt
+```
+
+### Running the App
+```bash
+# e.g.
+python app.py
+```
+Then open `http://localhost:5000` in your browser.
+
+## Team & Roles
+
+| Name | Role | GitHub |
+|---|---|---|
+| <name> | Team Lead / Repo Admin | @<username> |
+| <name> | Requirements Analyst | @<username> |
+| <name> | Documentation Lead | @<username> |
+| <name> | Reviewer / QA | @<username> |
+
+## Documentation
+Full requirements, scope, and system design rationale are in
+[`docs/SRS.md`](docs/SRS.md).
+
+## License
+This project is for academic purposes as part of the Jackfruit SE Mini-Project.
