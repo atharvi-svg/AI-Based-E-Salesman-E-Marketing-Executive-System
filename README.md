@@ -18,12 +18,19 @@ out (voice interaction, real CRM integration, ML-based scoring, real payments)
 and why.
 
 ## Features
-- 💬 Text-based chat interface with intent detection (price, specs, comparison, offers)
-- 🎯 Rule-based lead scoring with Hot / Warm / Cold classification
-- 🛍️ Rule-based personalized product recommendations
-- 🗂️ Built-in CRM: stores leads, chat transcripts, and scores
-- 🛒 Simulated cart & checkout flow
-- 📊 Admin dashboard to view and sort leads by score
+* Text-based chat interface with intent detection (price, specs, comparison, offers)
+* Rule-based lead scoring with Hot / Warm / Cold classification
+* Rule-based personalized product recommendations
+* Natural-language product search based on customer requirements
+* Context-aware conversation memory during a chat session
+* Product comparison based on price and specifications
+* Built-in CRM for storing leads, chat transcripts, and scores
+* Simulated cart and checkout flow
+* Cart abandonment detection for potential customers
+* Admin dashboard to view and sort leads by score
+* Basic sales and lead analytics
+* Explainable recommendations showing why a product is suggested
+
 
 ## Tech Stack
 | Layer | Technology |
