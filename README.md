@@ -4,9 +4,9 @@
 **Project Type:** Jackfruit SE Mini-Project  
 **Team Name:** Code Connect (Project ID: 15)  
 **Team Members:** Atharvi (Repo Admin), Chandana (Requirements Analyst), Harika (Documentation Lead), Arun (Reviewer)  
-**Document Reference:** [SRS.pdf](file:///c:/Users/arunr/Desktop/AI-Salesman/SRS.pdf) (Version 2.0)
+**Document Reference:** [SRS.pdf](SRS.pdf) (Version 2.0)
 
----
+
 
 ## 1. Project Overview
 
@@ -14,7 +14,16 @@
 
 Concurrently, a built-in **Internal CRM & Admin Dashboard** provides sales and marketing teams with real-time visibility into lead generation, transparent behavioral lead scoring (+points for price inquiries, product comparisons, purchase intent, cart actions), dynamic Cold/Warm/Hot classifications, complete chat transcripts, and conversion analytics.
 
----
+The application also supports context-aware chat, natural-language product discovery, product comparisons, rule-based recommendations, a simulated cart and checkout, and lead and sales analytics.
+
+## Features
+
+- Text chat with intent detection for product, price, specification, comparison, offer, and purchase questions
+- Product discovery by search, category, and budget
+- Context-aware recommendations using product category and budget
+- Lead scoring and Cold/Warm/Hot classification, with chat transcripts in the built-in CRM
+- Product comparison, simulated cart and checkout, and an admin dashboard
+
 
 ## 2. Technology Stack
 
@@ -23,7 +32,18 @@ Concurrently, a built-in **Internal CRM & Admin Dashboard** provides sales and m
 - **Database:** SQLite (persisting `products`, `leads`, `chat_logs`, `orders`)
 - **AI / NLP Logic:** Rule-based intent detection engine with transparent regex patterns and configurable thresholds (`backend/app/config.py`)
 
----
+## Project Structure
+
+```text
+backend/             FastAPI application, services, and tests
+frontend/            React/Vite application and npm lockfile
+SRS.pdf              Software Requirements Specification
+use_case_diagram.png Use-case diagram
+test_e2e_workflow.py End-to-end workflow test
+```
+
+See [SRS.pdf](SRS.pdf) for requirements and project scope, and [use_case_diagram.png](use_case_diagram.png) for the use-case diagram.
+
 
 ## 3. SRS Requirements Compliance Matrix
 
@@ -56,7 +76,7 @@ Concurrently, a built-in **Internal CRM & Admin Dashboard** provides sales and m
 | **NFR-SEC-01** | Security | Customer contact details private to admin view only | ✅ Fully Implemented |
 | **NFR-PORT-01** | Portability | Documented local execution for team and evaluators | ✅ Fully Implemented |
 
----
+
 
 ## 4. Lead Scoring Rules & Thresholds
 
@@ -81,7 +101,7 @@ LEAD_THRESHOLDS = {
 
 *Note on Duplicate Prevention:* The system tracks triggered scoring actions per session in the database (`scored_actions`). Subsequent queries of the same intent will answer the customer accurately but will not repeatedly inflate the score.
 
----
+
 
 ## 5. Documented Simplifications for Tomorrow's Academic Demo
 
@@ -91,7 +111,7 @@ As formally scoped in **SRS.pdf Section 1.2 & Section 7**, the following deliber
 3. **Simulated Checkout:** Replaced third-party payment gateways (Stripe/PayPal) with simulated checkout that validates customer name/contact, calculates totals, creates an order receipt, and marks the lead as converted.
 4. **Single-Language Focus:** English language processing.
 
----
+
 
 ## 6. Setup and Execution Instructions
 
@@ -125,7 +145,7 @@ npm run dev
 ```
 *Frontend web application will run at:* `http://localhost:5173`.
 
----
+
 
 ## 7. 10-Step Academic Review Verification Walkthrough
 
@@ -158,7 +178,7 @@ To demonstrate the full project lifecycle during evaluation:
     - Simulated order record with total price
     - Full chronological conversation transcript with intent tags.
 
----
+
 
 ## 8. Automated Test Suites
 
@@ -171,3 +191,7 @@ python backend/test_backend.py
 # Run complete 10-step end-to-end integration workflow test
 python test_e2e_workflow.py
 ```
+
+## License
+
+This project is for academic purposes as part of the Jackfruit SE Mini-Project.

@@ -1,0 +1,27 @@
+# Environment variables and local secrets
+.env
+.env.*
+!.env.example
+
+# Python environments, bytecode, and test/type-check caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node dependencies and generated frontend output
+node_modules/
+dist/
+build/
+coverage/
+npm-debug.log*
+
+# Local runtime databases and logs
+*.db
+*.sqlite
+*.sqlite3
+*.log
