@@ -38,11 +38,13 @@ The application also supports context-aware chat, natural-language product disco
 backend/             FastAPI application, services, and tests
 frontend/            React/Vite application and npm lockfile
 SRS.pdf              Software Requirements Specification
+Software_Architecture_Person4.docx
+                     Software architecture document
 use_case_diagram.png Use-case diagram
 test_e2e_workflow.py End-to-end workflow test
 ```
 
-See [SRS.pdf](SRS.pdf) for requirements and project scope, and [use_case_diagram.png](use_case_diagram.png) for the use-case diagram.
+See [SRS.pdf](SRS.pdf) for requirements and project scope, [Software_Architecture_Person4.docx](Software_Architecture_Person4.docx) for the software architecture, and [use_case_diagram.png](use_case_diagram.png) for the use-case diagram.
 
 
 ## 3. SRS Requirements Compliance Matrix
