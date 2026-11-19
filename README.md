@@ -3,7 +3,7 @@
 
 **Team:** Code Connect
 **Course:** UE24CS341A – Software Engineering (Jackfruit SE Mini-Project)
-**Project ID:** <fill in>
+**Project ID:** 17
 
 ## Overview
 A chat-based virtual sales assistant for a demo e-commerce store. The AI agent
